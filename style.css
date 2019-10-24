@@ -1,0 +1,179 @@
+
+
+body {
+    margin: auto 0;
+    font-family: arial;
+    background-color: #272d2d;
+}
+
+
+/* Zone */
+.zone {
+    cursor:pointer;
+    color:#FFF;
+    /*font-size:2em;*/
+    border-radius:4px;
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+/* Navigation Bar */
+
+nav {
+    width: 100%;
+}
+
+.main-header {
+    display: flex;
+    background-color: #1f1f1f;
+    font-size: 1.0em;
+}
+
+.sticky {
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+
+.main-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        font-size: 0.7em;
+        padding: 0;
+    }
+}
+
+.push {
+    margin-right: 30px;
+    margin-left: auto;
+}
+
+li {
+    padding: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.websiteTitle {
+    width: 100%;
+    text-align: center;
+}
+ 
+.websiteTitle > a {
+    font-size: 1.5em;
+}
+
+
+/* Cover */
+.container {
+    display: flex;
+    height: 85vh;
+    width: 80vw;
+    margin: auto;
+    margin-top: 100px;
+    border: 0px;  
+    align-items: center;
+    justify-content: center;
+    /*background-image: linear-gradient(to right, red, rgba(39, 45, 45, 1));*/
+}
+
+.cover {
+    height: auto;
+    text-align: center;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    padding: 0px 20px 20px 20px;
+}
+
+.cover > h1 {
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 6px;
+}
+
+
+.cover > button {
+    border-radius: 0.4em;
+    background-color: #272d2d;
+    border: 0px;
+    letter-spacing: 1px;
+    color: white;
+    margin: auto;
+}
+
+.cover > button:hover {
+    border: 1px solid black;
+}
+
+.cover > li {
+    text-decoration-style: none;
+    list-style: none;
+    padding: 0;
+}
+
+textarea {
+    resize: none;
+    white-space: nowrap;
+    overflow-x: scroll;
+    background-color: #272d2d;
+    color: white;
+    border: 0px;
+    scrollbar-color: #1f1f1f #272d2d;
+}
+
+/*Grid */
+.grid-wrapper {
+    width: 90vw;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px,1fr)); 
+    margin: auto;
+    margin-top: 40px;
+}
+
+.grid-wrapper:hover {
+    background-color: #1f1f1f
+}
+
+.box > img {
+    width: 100%;
+}
+
+.box {
+    background-color: white;
+    padding: 130px;
+    margin: 20px;
+    transition: all 0.25s;
+}
+
+.box:hover {
+    -webkit-transform: rotate(-3deg);
+    -moz-transform:rotate(-3deg);
+    -o-transform:rotate(-3deg);
+    transform:rotate(-3deg);
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: #1f1f1f;
+    margin-top: 40px;
+    font-size: 0.8em;
+    font-weight: lighter;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
